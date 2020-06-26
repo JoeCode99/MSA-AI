@@ -11,8 +11,8 @@ The complete AI Project for MSA.
 The overall goal of this project is to develop a model that is capable of classifying flower types according to the attributes provided in the ‘Iris.csv’ dataset. The dataset is incredibly simple, consisting of 5 columns and 150 rows – with only three different flower classifications to distinguish between (Iris Setosa, Iris Versicolor, and Iris Virginica). The small dataset allowed all development energy to be focused on experimenting with different supervised machine learning algorithms, evaluating their accuracies, and selecting the most accurate model to make predictions. More complicated datasets would require redundant columns to be removed from training and testing data, and may even require ‘dummy’ columns to be produced. Unsupervised ML algorithms (or deep-learning algorithms) would also considerably complicate development efforts. Given the limited time frame to work on this project (due to exams), the Iris Dataset was a perfect introduction into the machine learning world, allowing me to quickly understand a wide variety of useful concepts.
 
 Throughout development, two factors were prioritized above anything else:
-•	The model must be as accurate as possible, while avoiding the perils of overfitting and underfitting. 
-•	Training practices must not introduce any sources of bias to the model. 
+*	The model must be as accurate as possible, while avoiding the perils of overfitting and underfitting. 
+*	Training practices must not introduce any sources of bias to the model. 
 
 Both of these goals were successfully met. Evidence for this will be provided in the upcoming sections.
 
@@ -20,15 +20,15 @@ Both of these goals were successfully met. Evidence for this will be provided in
 All development was done within Microsoft Azure Notebooks, writing all code into a Jupyter notebook (using Python 3.6). This proved to be extremely helpful, as very little time was dedicated to setting up the development environment – with only the notebook file needing to be created.  
 
 Scikit-learn was by far the most influential dependency used throughout the project. The complete list of dependencies utilized for the completion of this project includes:
-•	Pandas.read_csv: Enabled the program to read in the ‘Iris.csv’ dataset.
-•	sklearn.model_selection.train_test_split: Allowed splitting of the data into training and testing datasets. Applies random shuffling techniques under the hood.
-•	sklearn.svm.SVC: Import framework for a Support Vector Machine algorithm.
-•	sklearn.linear_model.LogisticRegression: Import framework for a Logistic Regression Classification algorithm.
-•	sklearn.tree.DecisionTreeClassifier: Import framework for a Decision Tree Classification algorithm.
-•	sklearn.model_selection.cross_val_score & sklearn.model_selection.StratifiedKFold: Allows for simple implementation of the cross-validation technique to evaluate accuracy of chosen models.
-•	sklearn.metrics.accuracy_score: Calculates accuracy of model’s predictions.
-•	sklearn.metrics.confusion_matrix: Produces the confusion matrix for the model’s predictions.
-•	sklearn.metrics.classification_report: Produces a detailed classification report (with precision, recall, and f1-score values) for the model’s predictions.
+*	pandas.read_csv: Enabled the program to read in the ‘Iris.csv’ dataset.
+*	sklearn.model_selection.train_test_split: Allowed splitting of the data into training and testing datasets. Applies random shuffling techniques under the hood.
+*	sklearn.svm.SVC: Import framework for a Support Vector Machine algorithm.
+*	sklearn.linear_model.LogisticRegression: Import framework for a Logistic Regression Classification algorithm.
+*	sklearn.tree.DecisionTreeClassifier: Import framework for a Decision Tree Classification algorithm.
+*	sklearn.model_selection.cross_val_score & sklearn.model_selection.StratifiedKFold: Allows for simple implementation of the cross-validation technique to evaluate accuracy of chosen models.
+*	sklearn.metrics.accuracy_score: Calculates accuracy of model’s predictions.
+*	sklearn.metrics.confusion_matrix: Produces the confusion matrix for the model’s predictions.
+*	sklearn.metrics.classification_report: Produces a detailed classification report (with precision, recall, and f1-score values) for the model’s predictions.
 
 ## How to Train and Test the Model
 By evaluating several different machine learning algorithms, it was found the Support Vector Classification algorithm worked best in this scenario, achieving an estimated accuracy of 98% by applying the cross validation technique (more details about this technique are provided below). To train and test the data:
