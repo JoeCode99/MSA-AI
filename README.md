@@ -3,8 +3,8 @@ The complete AI Project for MSA.
 
 ## Table of Contents
 * [Project Description](#project-description)
-* [Environment Setup & Dependencies](#environment-setup-&-dependencies)
-* [How to Train & Test the Model](#how-to-train-&-test-the-model)
+* [Environment Setup & Dependencies](#environment-setup-and-dependencies)
+* [How to Train & Test the Model](#how-to-train-and-test-the-model)
 * [Potential Improvements to the Project](#potential-improvements-to-the-project)
 
 ## Project Description
@@ -16,7 +16,7 @@ Throughout development, two factors were prioritized above anything else:
 
 Both of these goals were successfully met. Evidence for this will be provided in the upcoming sections.
 
-## Environment Setup & Dependencies
+## Environment Setup and Dependencies
 All development was done within Microsoft Azure Notebooks, writing all code into a Jupyter notebook (using Python 3.6). This proved to be extremely helpful, as very little time was dedicated to setting up the development environment – with only the notebook file needing to be created.  
 
 Scikit-learn was by far the most influential dependency used throughout the project. The complete list of dependencies utilized for the completion of this project includes:
@@ -30,7 +30,7 @@ Scikit-learn was by far the most influential dependency used throughout the proj
 •	sklearn.metrics.confusion_matrix: Produces the confusion matrix for the model’s predictions.
 •	sklearn.metrics.classification_report: Produces a detailed classification report (with precision, recall, and f1-score values) for the model’s predictions.
 
-## How to Train & Test the Model
+## How to Train and Test the Model
 By evaluating several different machine learning algorithms, it was found the Support Vector Classification algorithm worked best in this scenario, achieving an estimated accuracy of 98% by applying the cross validation technique (more details about this technique are provided below). To train and test the data:
 1.	Perform an 80/20 split on the dataset using the train_test_split method (provided by sklearn.model_selection) to create the training and testing datasets respectively.
 2.	Create the SVC model by producing an instance of the sklearn.svm.SVC object in the program.
