@@ -20,15 +20,15 @@ Both of these goals were successfully met. Evidence for this will be provided in
 All development was done within Microsoft Azure Notebooks, writing all code into a Jupyter notebook (using Python 3.6). This proved to be extremely helpful, as very little time was dedicated to setting up the development environment – with only the notebook file needing to be created.  
 
 Scikit-learn was by far the most influential dependency used throughout the project. The complete list of dependencies utilized for the completion of this project includes:
-*	pandas.read_csv: Enabled the program to read in the ‘Iris.csv’ dataset.
-*	sklearn.model_selection.train_test_split: Allowed splitting of the data into training and testing datasets. Applies random shuffling techniques under the hood.
-*	sklearn.svm.SVC: Import framework for a Support Vector Machine algorithm.
-*	sklearn.linear_model.LogisticRegression: Import framework for a Logistic Regression Classification algorithm.
-*	sklearn.tree.DecisionTreeClassifier: Import framework for a Decision Tree Classification algorithm.
-*	sklearn.model_selection.cross_val_score & sklearn.model_selection.StratifiedKFold: Allows for simple implementation of the cross-validation technique to evaluate accuracy of chosen models.
-*	sklearn.metrics.accuracy_score: Calculates accuracy of model’s predictions.
-*	sklearn.metrics.confusion_matrix: Produces the confusion matrix for the model’s predictions.
-*	sklearn.metrics.classification_report: Produces a detailed classification report (with precision, recall, and f1-score values) for the model’s predictions.
+*	**pandas.read_csv:** Enabled the program to read in the ‘Iris.csv’ dataset.
+*	**sklearn.model_selection.train_test_split:** Allowed splitting of the data into training and testing datasets. Applies random shuffling techniques under the hood.
+*	**sklearn.svm.SVC:** Import framework for a Support Vector Machine algorithm.
+*	**sklearn.linear_model.LogisticRegression:** Import framework for a Logistic Regression Classification algorithm.
+*	**sklearn.tree.DecisionTreeClassifier:** Import framework for a Decision Tree Classification algorithm.
+*	**sklearn.model_selection.cross_val_score & sklearn.model_selection.StratifiedKFold:** Allows for simple implementation of the cross-validation technique to evaluate accuracy of chosen models.
+*	**sklearn.metrics.accuracy_score:** Calculates accuracy of model’s predictions.
+*	**sklearn.metrics.confusion_matrix:** Produces the confusion matrix for the model’s predictions.
+*	**sklearn.metrics.classification_report:** Produces a detailed classification report (with precision, recall, and f1-score values) for the model’s predictions.
 
 ## How to Train and Test the Model
 By evaluating several different machine learning algorithms, it was found the Support Vector Classification algorithm worked best in this scenario, achieving an estimated accuracy of 98% by applying the cross validation technique (more details about this technique are provided below). To train and test the data:
