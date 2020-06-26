@@ -3,8 +3,8 @@ The complete AI Project for MSA.
 
 ## Table of Contents
 * [Project Description](#project-description)
-* [Environment Setup & Dependencies](#environment-setup-and-dependencies)
-* [How to Train & Test the Model](#how-to-train-and-test-the-model)
+* [Environment Setup and Dependencies](#environment-setup-and-dependencies)
+* [How to Train and Test the Model](#how-to-train-and-test-the-model)
 * [Potential Improvements to the Project](#potential-improvements-to-the-project)
 
 ## Project Description
@@ -42,7 +42,7 @@ By evaluating several different machine learning algorithms, it was found the Su
 Much of the lower-level logic is automatically handled by the functions provided by scikit-learn. This is emphasized by the program’s use of cross validation to determine the best possible ML algorithm/model for the dataset, requiring only two lines of code to be completed. Under the hood, the following steps are conducted for cross validation:
 1.	Shuffle the data randomly.
 2.	Split the data into groups (10 in this case).
-3.	For each group:
+*	3. For each group:
     3.1 Pick one group as the test dataset and treat the rest as the training datasets.
     3.2 Apply the model to the training datasets and evaluate its accuracy on the test set.
 4.	Return the mean of the evaluation scores to determine the model’s performance.
