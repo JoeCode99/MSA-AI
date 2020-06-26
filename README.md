@@ -1,7 +1,13 @@
 # MSA-AI
-AI Project for MSA.
+The complete AI Project for MSA.
 
-### Project Description
+## Table of Contents
+* [Project Description](#project-description)
+* [Environment Setup & Dependencies](#environment-setup-&-dependencies)
+* [How to Train & Test the Model](#how-to-train-&-test-the-model)
+* [Potential Improvements to the Project](#potential-improvements-to-the-project)
+
+## Project Description
 The overall goal of this project is to develop a model that is capable of classifying flower types according to the attributes provided in the ‘Iris.csv’ dataset. The dataset is incredibly simple, consisting of 5 columns and 150 rows – with only three different flower classifications to distinguish between (Iris Setosa, Iris Versicolor, and Iris Virginica). The small dataset allowed all development energy to be focused on experimenting with different supervised machine learning algorithms, evaluating their accuracies, and selecting the most accurate model to make predictions. More complicated datasets would require redundant columns to be removed from training and testing data, and may even require ‘dummy’ columns to be produced. Unsupervised ML algorithms (or deep-learning algorithms) would also considerably complicate development efforts. Given the limited time frame to work on this project (due to exams), the Iris Dataset was a perfect introduction into the machine learning world, allowing me to quickly understand a wide variety of useful concepts.
 
 Throughout development, two factors were prioritized above anything else:
@@ -10,7 +16,7 @@ Throughout development, two factors were prioritized above anything else:
 
 Both of these goals were successfully met. Evidence for this will be provided in the upcoming sections.
 
-### Environment Setup & Dependencies
+## Environment Setup & Dependencies
 All development was done within Microsoft Azure Notebooks, writing all code into a Jupyter notebook (using Python 3.6). This proved to be extremely helpful, as very little time was dedicated to setting up the development environment – with only the notebook file needing to be created.  
 
 Scikit-learn was by far the most influential dependency used throughout the project. The complete list of dependencies utilized for the completion of this project includes:
@@ -24,7 +30,7 @@ Scikit-learn was by far the most influential dependency used throughout the proj
 •	sklearn.metrics.confusion_matrix: Produces the confusion matrix for the model’s predictions.
 •	sklearn.metrics.classification_report: Produces a detailed classification report (with precision, recall, and f1-score values) for the model’s predictions.
 
-### How to Train & Test the Model
+## How to Train & Test the Model
 By evaluating several different machine learning algorithms, it was found the Support Vector Classification algorithm worked best in this scenario, achieving an estimated accuracy of 98% by applying the cross validation technique (more details about this technique are provided below). To train and test the data:
 1.	Perform an 80/20 split on the dataset using the train_test_split method (provided by sklearn.model_selection) to create the training and testing datasets respectively.
 2.	Create the SVC model by producing an instance of the sklearn.svm.SVC object in the program.
@@ -41,7 +47,7 @@ a.	Pick one group as the test dataset and treat the rest as the training dataset
 b.	Apply the model to the training datasets and evaluate its accuracy on the test set.
 4.	Return the mean of the evaluation scores to determine the model’s performance.
 
-### Potential Improvements to the Project
+## Potential Improvements to the Project
 The program (as seen now) only evaluates the effectiveness of three different supervised ML algorithms. A wider variety of ML algorithms could have been tested all at once without adding much complexity (scikit-learn provides plenty of libraries to make this incredibly straightforward). Other algorithms were tested (such as the Gaussian Naïve Bayes algorithm) but I decided to reduce the final program to only display comparisons between the top three contenders.
 
 With more time I could have tackled a more complex dataset - such as the Parkinson’s dataset -, which would have required me to apply other ML techniques such as removing redundant fields from analysis. Given the open-source nature of these datasets, I will definitely work on these interesting datasets at a later date.
